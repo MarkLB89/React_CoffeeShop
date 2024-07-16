@@ -1,0 +1,130 @@
+/* src/ImageGallery.css */
+.container {
+    text-align: center;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    position: relative;
+    border-radius: 50%;
+    transform-origin: center center;
+    transition: transform 1s ease-in-out;
+}
+
+.image-wrapper {
+    position: absolute;
+    transform-origin: center center;
+}
+
+.image-container img {
+    border-radius: 50%;
+    transition: width 1s ease-in-out, height 1s ease-in-out;
+}
+
+.image-container img.small {
+    width: 20px;
+    height: 20px;
+}
+
+.image-container img.highlight {
+    width: 130px;
+    height: 130px;
+    border: 5px solid #ff9800;
+    box-shadow: 0 0 15px rgba(255, 152, 0, 0.7);
+}
+
+/* Additional CSS for button-container */
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    max-height: 200px; /* Set your desired max height */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.button-container::-webkit-scrollbar {
+    width: 5px;
+}
+
+.button-container::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+.button-container::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.button-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button-container button.highlight-button {
+    background-color: #ff9800;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .image-container {
+        width: 300px;
+        height: 300px;
+    }
+
+    .image-container img.small {
+        width: 40px;
+        height: 40px;
+    }
+
+    .image-container img.highlight {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 400px) {
+    .image-container {
+        width: 200px;
+        height: 200px;
+    }
+
+    .image-container img.small {
+        width: 30px;
+        height: 30px;
+    }
+
+    .image-container img.highlight {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/* New styles for table-gallery section */
+.table-gallery {
+    position: relative;
+    width: 100%;
+}
+
+.table-gallery .video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.table-gallery .video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 10;
+}

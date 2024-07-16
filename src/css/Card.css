@@ -1,0 +1,83 @@
+.card {
+    width: 100%;
+    max-width: 350px;
+    /* Largest cell phone width as of 2024 */
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(61, 22, 146, 0.24);
+    border-radius: 10px;
+    text-align: center;
+    background-color: #924f0fc7;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+}
+
+.round-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    box-shadow: 0 8px 12px rgba(61, 22, 146, 0.464);
+}
+
+button {
+    height: 45px;
+    margin-top: 10px;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #624707;
+    color: #fff;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #00070f;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 50px;
+    cursor: pointer;
+    color: #f6f2f2;
+}
+
+.close-btn:hover {
+    color: #fbfbfb;
+}
+
+.fade-in {
+    animation: fadeIn 2s;
+    margin-top: 10px;
+    font-size: 18px;
+    color: #faf4f4;
+    width: 100%;
+}
+
+.name_card {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 8px 12px rgba(61, 22, 146, 0.514);
+    border-radius: 5px;
+    text-align: center;
+    background-color: #000a0f;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

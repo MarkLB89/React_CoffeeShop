@@ -1,0 +1,18 @@
+.card, #input {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: 2px solid #0800003f;
+    border-radius: 4px;
+}
+
+input.error {
+    border-color: rgb(255, 30, 0);
+
+}
+
+.error-text {
+    color: rgb(253, 253, 253);
+    font-size: 16px;
+}
