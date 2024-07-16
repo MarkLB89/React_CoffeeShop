@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/React_CoffeeShop/static/css/main.2d4aa9f2.css",
+    "main.js": "/React_CoffeeShop/static/js/main.0dabf1e1.js",
+    "static/js/453.adad6bf2.chunk.js": "/React_CoffeeShop/static/js/453.adad6bf2.chunk.js",
+    "static/media/cafe.jpeg": "/React_CoffeeShop/static/media/cafe.8eb10f683b5f5c554363.jpeg",
+    "index.html": "/React_CoffeeShop/index.html",
+    "main.2d4aa9f2.css.map": "/React_CoffeeShop/static/css/main.2d4aa9f2.css.map",
+    "main.0dabf1e1.js.map": "/React_CoffeeShop/static/js/main.0dabf1e1.js.map",
+    "453.adad6bf2.chunk.js.map": "/React_CoffeeShop/static/js/453.adad6bf2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2d4aa9f2.css",
+    "static/js/main.0dabf1e1.js"
+  ]
+}

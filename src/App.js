@@ -1,4 +1,3 @@
-// src/App.js
 import React, { useState } from 'react';
 import './css/App.css';
 import './css/Inputs.css';
@@ -53,7 +52,7 @@ export default function App() {
                                 {/* Container for the video background */}
                                 <div className="video-background">
                                     <video autoPlay muted loop> {/* Autoplay, mute, and loop video */}
-                                        <source src="/logo3_animation.mp4" type="video/mp4" /> {/* Video source */}
+                                        <source src={`${process.env.PUBLIC_URL}/logo3_animation.mp4`} type="video/mp4" /> {/* Video source */}
                                     </video>
                                 </div>
                                 {/* Images component to display images with rotation and selection */}
@@ -95,13 +94,14 @@ export default function App() {
                 </table>
             </section>
 
-
             <form onSubmit={handleSubmit}>
                 <section className="table-container">
                     <table>
                         <tbody>
                             <tr>
-                                <img src="/Dlogo.png" alt="Coffee Logo 1" className="Dlogo" />
+                                <td>
+                                    <img src={`${process.env.PUBLIC_URL}/Dlogo.png`} alt="Coffee Logo 1" className="Dlogo" />
+                                </td>
                             </tr>
                             <tr>
                                 <td>
@@ -138,9 +138,9 @@ export default function App() {
                             <td colSpan="3">
                                 <div className="card">
                                     <div className="menu-header">
-                                        <img src="/coffeeLogo1.png" alt="Coffee Logo 1" className="logo" />
-                                        <img src="/Clogo.png" alt="Coffee Logo 1" className="Clogo" />
-                                        <img src="/coffeeLogo2.png" alt="Coffee Logo 2" className="logo" />
+                                        <img src={`${process.env.PUBLIC_URL}/coffeeLogo1.png`} alt="Coffee Logo 1" className="logo" />
+                                        <img src={`${process.env.PUBLIC_URL}/Clogo.png`} alt="Coffee Logo 1" className="Clogo" />
+                                        <img src={`${process.env.PUBLIC_URL}/coffeeLogo2.png`} alt="Coffee Logo 2" className="logo" />
                                     </div>
                                 </div>
                             </td>
